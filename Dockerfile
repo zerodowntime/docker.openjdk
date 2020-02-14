@@ -9,6 +9,6 @@ FROM zerodowntime/centos:$CENTOS_VERSION
 ARG JAVA_VERSION=1.8.0
 
 RUN yum -y install \
-      java-$JAVA_VERSION-openjdk-headless \
+      java-$JAVA_VERSION-openjdk \
     && yum clean all \
     && rm -rf /var/cache/yum /var/tmp/* /tmp/*
